@@ -1,0 +1,34 @@
+table.ejercicio{
+    font: .9em Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #333;
+    text-align: center;
+}
+table.ejercicio tr.cabecera th{
+    background: #F5F5F5 url(/EJCompleto/04/imagenes/fondo_gris.gif) repeat-x;
+}
+table.ejercicio tr{
+    height: 4em;
+    vertical-align: bottom;
+}
+th[scope=row]{
+    background-color: cyan;
+}
+th,td{
+    border: .1em solid ;
+}
+.monedaeuro{
+    background: cyan url(/EJCompleto/04/imagenes/euro.png) no-repeat left top;;
+}
+.monedadolar{
+    background: cyan url(/EJCompleto/04/imagenes/dolar.png) no-repeat left top;
+}
+.monedalibra{
+    background: cyan url(/EJCompleto/04/imagenes/libra.png) no-repeat left top;
+}
+.monedayen{
+    background: cyan url(/EJCompleto/04/imagenes/yen.png) no-repeat left top;
+}
+tr:nth-of-type(odd){
+    background-color: #FFFFCC;
+}

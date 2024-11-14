@@ -1,0 +1,213 @@
+/* IMPORTANTE para evitar descuadres */
+:root {
+	--espaciado: 0.5rem;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* Definimos un contenedor auxiliar para especificar el tamaño de la página y alineación */
+.centrado {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* En este caso se opta por la altura en em para que se adapte al tamaño de fuente de los elementos de la clase menú*/
+.topdown {
+	height: 6em;
+	border-radius: 1em;
+	border: 1px solid black;
+}
+
+/* Estilos de cada ítem de menú */
+.menu div.menu-item {
+	text-align: center;
+	padding: 0.25em;
+	background-color: blue;
+	color: lightgrey;
+	width: 7rem;
+
+}
+
+.menu {
+	display: flex;
+	flex-direction: row;
+	margin-left: var(--espaciado);
+
+}
+
+/* Display flex para alinear el menú en la cabecera */
+#cabecera {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	background-color: lightblue;
+	margin: auto;
+}
+
+/* Importante definir la altura en el contenedor principal con alguna unidad que no sea porcentaje. Así se calculan bien las de los elementos internos */
+.main_container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	border: 1px solid black;
+	padding: 0.5rem;
+	height: 65vh;
+	box-shadow: 2px 2px 5px blue;
+	margin-top: 0.5rem;
+	gap: var(--espaciado);
+}
+
+/* Clase con borde rojo para las cajas */
+.caja {
+
+	border: 1px dotted red;
+}
+
+#izquierda {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 0.5rem;
+	gap: 0.5rem;
+	border: 1px solid black;
+}
+
+#derecha {
+	border: 1px solid black;
+	width: 33%;
+}
+
+/* Altura de las cajas con contenido */
+#caja_pequeña {
+	height: 30%;
+}
+
+#caja_grande {
+	height: 70%;
+	display: flex;
+	flex-direction: row;
+	gap: var(--espaciado);
+	justify-content: space-around;
+	width: 100%;
+}
+
+#caja_grande .contenido {
+	flex-grow: 1;
+}
+
+
+/* Estilos del pie de página */
+#pie {
+	margin-top: 0.5rem;
+}
+
+@media (max-width: 992px) {
+	.menu div.menu-item {
+		display: flex;
+		justify-content: space-around;
+		text-align: center;
+		padding: 0.25em;
+		background-color: blue;
+		color: lightgrey;
+		width: 100%;
+
+	}
+
+	.menu {
+		display: flex;
+		flex-direction: row;
+		margin: var(--espaciado);
+		margin-bottom: 0;
+		width: 100%;
+	}
+
+	#izquierda {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 0.5rem;
+		gap: 0.5rem;
+		border: 1px solid black;
+	}
+	#caja_pequeña {
+		height: 50%;
+	}
+	
+	#caja_grande {
+		height: 70%;
+		display: flex;
+		flex-direction: column;
+		gap: var(--espaciado);
+		justify-content: space-around;
+		width: 100%;
+
+	}
+
+	#caja_grande .contenido {
+		flex-grow: 1;
+	}
+}
+@media (max-width: 768px) {
+	.menu div.menu-item {
+		display: flex;
+		justify-content:center;
+		text-align: center;
+		padding: 0.25em;
+		background-color: blue;
+		color: lightgrey;
+		width: 7rem;
+
+	}
+	#cabecera {
+		background-color: lightblue;
+		margin: auto;
+	}
+	.menu {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: space-around;
+		margin: var(--espaciado);
+	}
+	.main_container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		border: 1px solid black;
+		padding: 0.5rem;
+		height: 100vh;
+		box-shadow: 2px 2px 5px blue;
+		margin-top: 0.5rem;
+		gap: var(--espaciado);
+	}
+	#caja_grande .contenido:nth-child(2) {
+		display: none;
+	}
+}
+@media (max-width: 544px) {
+
+	.main_container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		border: 1px solid black;
+		padding: 0.5rem;
+		height: 100vh;
+		box-shadow: 2px 2px 5px blue;
+		margin-top: 0.5rem;
+		gap: var(--espaciado);
+	}
+	#izquierda{
+		flex-grow: 2;
+	}
+	#derecha{
+        flex-grow: 1;
+		width: 100%;
+    }
+	#caja_grande .contenido:nth-child(2) {
+		display: none;
+	}
+}

@@ -1,0 +1,44 @@
+p:first-of-type{
+    font-weight: bold;
+    font-style: italic;
+    text-indent: 2em;
+}
+#consejo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ceca85;
+    font-weight: bold;
+    color: #442A5D;
+    text-align: justify;
+}
+#textolinea{
+background-color: #f9ddc3;
+    text-transform: capitalize;
+    font-variant: small-caps;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+}
+h3{
+    background-color: #ac8159;
+
+    color: #f9f6c3;
+    
+}
+.clase{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    ;font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+    color: #755b75;
+}
+/*
+#idparastilo{
+background-color: #9786A8
+word-sapcing: 0.7em;
+color:#FFF;
+leter-spacing:5px
+}
+table{
+width:100%
+}
+
+*/

@@ -1,0 +1,55 @@
+div header{
+    background-color: rgb(196, 196, 196);
+    width: 80%;
+    display: flex;
+    padding: 1vh;
+}
+div footer{
+    background-color: cadetblue;
+    width: 80%;
+    display: flex;
+    padding: 2.5vh;
+}
+
+.container>*{
+    margin-bottom: 5vh;
+}
+.container div {
+    background-color: #deb887;
+    border: 1px solid black;
+}
+div header div{
+   height: 5vh;
+   align-content: center;
+   padding-left: 1vh;
+   flex-basis: 15%;
+}
+.container header div:nth-child(1){
+    order: 1;
+flex-grow: 1;
+
+}
+
+.container header div:nth-child(2){
+flex-grow: 1;
+}
+
+.container header div:nth-child(3){
+    flex-grow: 2;
+
+}
+
+.container header div:nth-child(4){
+    flex-grow: 3;
+}
+.container footer div{
+    height: 15vh;
+    transform: translateY(0.8vh);
+}
+.container footer div:nth-child(1),
+.container footer div:nth-child(3){
+    flex-grow: 1;
+}
+.container footer div:nth-child(2){
+    flex-grow:  15;
+}

@@ -1,0 +1,50 @@
+#container {
+    width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#container h1 {
+    margin-top: 1em;
+    border: 2px solid #00F;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+#container h2 {
+    margin-top: 0.75em;
+    border: 2px solid #AAA;
+    padding: 0.5em;
+    margin-bottom: 0.75em;
+}
+#container ul {
+    border: 2px solid #0F0;
+
+}
+
+#datos {
+    
+    
+    padding: 0;
+}
+
+#datos li {
+    margin-top: 1em;
+    margin-left: 3em;
+}
+
+#contenido {
+    padding: 0;
+    
+}
+
+#contenido li {
+    margin-top: 1em;
+    margin-left: 3em;
+}
+
+#contenido li p {
+    margin-top: 1em;
+}

@@ -1,0 +1,113 @@
+/* Se aconseja el uso de relleno a 20px y el color de fondo #c62828. El tamaño del título es 1.8em. El color del texto es #fff. */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* Quitar los rellenos y los márgenes y el color de fondo es #f0f0f0. */
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+.contenedor1{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.contenedor1 header {
+    background-color: #c62828;
+    padding: 20px;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.contenedor1 header h1 {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8em;
+
+}
+
+.contenedor1 header ul {
+    text-decoration: none;
+    list-style: none;
+    padding-right: 20px;
+}
+
+.contenedor1 header ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.contenedor1 header ul a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Cambiar el cursor a pointer en los distintos elementos de la lista. */
+
+.contenedor1 header ul li a:hover {
+    cursor: pointer;
+}
+
+/* Mediante el uso de flex se debe centrar vertical y horizontalmente, 
+así como el uso de un relleno de 20px para una mejor visión del regalo */
+
+.contenedor1 .regalos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 20px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-top: 100px;
+}
+
+ /* Cada regalo está contenido en una caja con el color de fondo #80cbc4,un margen de 10px un relleno de 15 px.  */
+ .regalos .regalo {
+    background-color: #80cbc4;
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 0 25%;
+ }
+.regalos .regalo img{
+    width: 400px;
+    height: 300px;
+    
+}
+.regalos .regalo:hover{
+    /* A la hora de poner el cursor sobre un regalo, es necesario aplicar una animación de 0,3s ease, de tal modo que se aumente la escala y se aumente a 2 el relleno del contendor  */
+    transform: scale(1.1) translateY(-5px);
+    transition: transform 0.3s ease;
+}
+.quienessomos{
+    position: relative;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.quienessomos div img{
+    margin: 10px;
+}
+
+
+

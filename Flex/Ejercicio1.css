@@ -1,0 +1,35 @@
+:root{
+    --alto: 12.5rem;
+}
+div.test{
+    background-color: aquamarine;
+    margin-bottom: 30px;
+}
+div.test ul.flexend1{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: var(--alto);
+}
+div.test ul.flexend2{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: var(--alto);
+}
+div.test ul li{
+    background-color: orangered;
+    display: block;
+    width: 18%;
+height: 3em;
+line-height: 3em;
+font-size: 1.5em;
+font-weight: bold;
+text-align: center;
+color: #fff;
+}
+

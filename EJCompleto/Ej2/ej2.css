@@ -1,0 +1,45 @@
+#capa1{
+    color: #f9f6c3;
+    background-color: #789498;
+    border: thin solid #234E54;
+}
+span.capa1,#capa1 a:hover {
+    background-color: #f9ddc3;
+}
+#capa2:hover a{
+    color: #fff200;
+    background-color: #061df0;
+    border: thin solid #234E54;
+}
+span.capa2,#capa2 a:hover {
+    background-color: #061df0;
+}
+#capa2{
+
+    background-color: #5a4074;
+color: #f9f6c3;
+}
+#capa3{
+
+    background-color: brown;
+    border: thin solid #234E54;
+}
+
+
+span.capa3 {
+    background-color: #dc06f0;
+}
+#google:hover{
+   
+    background-color: #dc06f0;
+    
+}
+#capa4{
+
+    background-color: greenyellow;
+    border: thin solid #234E54;
+}
+#capa4:hover #madrid{
+    background-color: #f03d06;
+    border: thin solid #234E54;
+}

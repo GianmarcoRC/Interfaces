@@ -1,0 +1,40 @@
+
+/*EJ1*/
+td[colspan="2"],[rowspan="2"] {
+    background-color: #234e54;
+}
+
+td[colspan="4"],[rowspan="4"] {
+    background-color: brown;
+}
+
+td[colspan="3"],[rowspan="3"] {
+    background-color: yellow;
+}
+
+/*EJ2 ^= Que comience *=Que contenga */
+li[id^="pregunta"] {
+  font-family: Verdana;
+  list-style-type: square;
+  color: blueviolet;
+}
+.negrita{
+  font-weight: bold;
+}
+/*EJ3*/
+li[id] .negrita {
+  background-color: yellow;
+}
+/*EJ4*/
+.comentarios {
+  font-style: italic;
+  border: 1px dotted #ccc;
+}
+/*EJ5*/
+p + p {
+  text-decoration: underline;
+}
+/*EJ6*/
+li > a {
+  background-color: #ADD8E6;
+}

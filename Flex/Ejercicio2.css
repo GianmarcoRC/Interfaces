@@ -1,0 +1,24 @@
+div{
+    background-color: aquamarine;
+    
+}
+div ul{
+    display: flex;
+    list-style-type: none;
+    flex-direction: column-reverse;
+    padding: 30px;
+    align-items: center;
+    border: 1px solid black;
+}
+div ul li{
+    background-color: orangered;
+    display: block;
+    width: 18%;
+height: 3em;
+line-height: 3em;
+font-size: 1.5em;
+font-weight: bold;
+text-align: center;
+color: #fff;
+margin-bottom: 10px;
+}

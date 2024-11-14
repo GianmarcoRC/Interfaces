@@ -1,0 +1,43 @@
+*{
+    border: 1px solid black;
+}
+#negrita {
+    display: block;
+   
+}
+
+.parrafoenlinea {
+    display: inline;
+    display: list-item;
+    margin-left: 3em;
+}
+
+
+
+.nomostrar {
+    display: none;
+}
+
+.bloqueenlinea {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.celdadetabla {
+    display: table-cell;
+    width: 200px;
+    height: 50px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.desplazado {
+    position: relative;
+    top: 20px;
+    right: 20px;
+}
