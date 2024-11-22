@@ -1,0 +1,30 @@
+.contenedor{
+    border: 1px solid black;
+    height: 20rem;
+    width: 20rem;
+    padding: 5px;
+    margin: 5px;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.Cajas{
+    background-color: red;
+    width: 25%;
+    height: 25%;
+    flex: 1;
+    color: black;
+    
+}
+.Cajas:hover{
+    transition: 4s ease-in-out 0.5s; 
+    transform: rotate(270deg);
+    animation-delay: 0.5;
+    transition: 4s ;
+    background-color: blue;
+    color: yellow;
+    transform: scale(1.1);
+}
+
